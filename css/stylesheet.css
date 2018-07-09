@@ -1,0 +1,218 @@
+/* --------------------------------全体-------------------------------- */
+
+body {
+  margin-top: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  /* 見た目が綺麗になる */
+   font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+}
+
+
+
+
+
+
+/*-----------------------------header--------------------------------  */
+
+/* header {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  padding: 0 10%;
+  font-style: normal;
+  font-family: 'MV Boil';
+  line-height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  color: rgb(21, 149, 135);
+}
+
+header a {
+  font-size: 30px;
+  line-height: 60px;
+  color: rgba(21, 149, 135, 1);
+} */
+
+
+
+
+
+/* ---------------------------.topWrapper------------------------------- */
+
+.topWrapper {
+  height: 100vh;
+  /* こいつが肝！ */
+  width: 100%;
+  /* height: 800px; */
+  background: url(../images/topImage2.5.png) no-repeat fixed center;
+  /* 画像を固定したいのなら、backgroundをfixedに変換するだけでOK! */
+  background-size: cover;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.topWrapper h1 {
+  font-size: 80px;
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
+  text-align: right;
+}
+
+.logo {
+  /* font-size: 100px; */
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: rgb(245, 147, 0);
+  transition: all 1s;
+}
+
+.logo:hover {
+  color: rgba(21, 149, 135, 1);
+  cursor: pointer;
+}
+
+.logo .fa-cogs {
+  font-size: 50px;
+}
+
+.logo p {
+  font-size: 100px;
+}
+
+.logo .fa-cogs, .logo p {
+  float: left;
+}
+
+
+
+
+
+/* -----------------------.topWrapperより下の共通設定------------------------- */
+
+.container {
+  width: 86%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  margin: 0 7% 100px 7%;
+}
+
+.container h1 {
+  font-size: 40px;
+  color: rgb(21, 149, 135);
+  border-bottom: solid 2px rgb(130, 130, 130);
+}
+
+.container p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container span {
+  color: rgb(21, 149, 135);
+}
+
+
+
+
+
+/* ---------------------------.course ----------------------------- */
+
+.courseContainer {
+  width: 44%;
+  margin: 0 3% 0 3%;
+  padding: 2% 2% 2% 2%;
+  float: left;
+  background-color: rgba(245, 162, 0, 0.48);
+  border-radius: 5px;
+}
+
+.courseContainer h2 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(21, 149, 135);
+}
+
+.courseContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.courseContainer p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.contact {
+  display: block;
+}
+
+.mail {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 25px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.mail:hover {
+  color: rgb(245, 147, 0);
+}
+
+.mail .far {
+  border-bottom: solid 2px;
+}
+
+main {
+  /* position: relative; */
+  padding-bottom: 30px;
+}
+
+body {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: relative;
+}
+/* ↑footerをサイトの最下点に表示するためのコード。さらにfooterにposition: absolute; とbottom: 0;を設定し、
+mainのpadding-bottomをfooterの高さ分だけ設定する必要がある。 */
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(164, 164, 164);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+  color: black;
+  line-height: 30px;
+}

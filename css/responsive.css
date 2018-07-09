@@ -1,0 +1,44 @@
+@media(max-width: 960px) {
+  .logo .fa-cogs {
+    font-size: 40px;
+  }
+
+  .logo p {
+    font-size: 80px;
+  }
+
+  .topWrapper h1 {
+    font-size: 50px;
+  }
+
+  .courseContainer {
+    width: 92%;
+    margin: 10px 4% 0 4%;
+    padding: 2% 2% 2% 2%;
+  }
+
+
+}
+
+
+
+@media(max-width: 600px) {
+  .logo .fa-cogs {
+    font-size: 25px;
+  }
+
+  .logo p {
+    font-size: 50px;
+  }
+
+  .topWrapper h1 {
+    font-size: 30px;
+  }
+
+  .mail {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+}
